@@ -19,12 +19,29 @@ h1, h2 {
     color: #184f63; /* dark-blue */
 }
 
+.sharp-corners, .sharp-corners * {
+    border-radius: 0;
+}
+
 #about {
     background-color: white;
 }
 
 #portfolio {
     background-color: #dbdcde; /* light grey */
+}
+
+#portfolio .card-title {
+    color: #1f7798; /* mid-blue */
+    font-size: 1.2rem;
+}
+
+#portfolio btn-outlin-secondary:hover {
+    background-color: #1f7798;
+}
+
+#portfolio .card-text {
+    min-height: 120px;
 }
 
 #contac {
@@ -38,4 +55,11 @@ h1, h2 {
     background-position: 50% 70%;
     min-height: 500px;
     padding: 5% 7%;
+}
+
+@media screen and (min-width: 1200px) {
+    /* Fixes all portfolio cards being on xl screens */
+    #portfolio .card-text {
+        min-height: auto;
+    }
 }
